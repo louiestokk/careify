@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/ee0a0de948.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <script defer src="./bokatid.js"></script>
+
+    <title>careiFy</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header id="heart">
+        <div class="header-container">
+          <div class="field">
+            <p class="control has-icons-left">
+              <input
+                class="input"
+                type="search"
+                placeholder="Symptom och sjukdomar"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </p>
+          </div>
+          <div class="cart hide">
+            <span class="count">0</span>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-container">
+          <div class="apoointment-container hollare hidden">
+            <span class="stang">stäng</span>
+            <div class="tand">
+              <i class="fas fa-tooth"></i>
+              <p>Tandvärk</p>
+            </div>
+            <div class="feber">
+              <i class="fas fa-thermometer-full"></i>
+              <p>Feber/Hosta</p>
+            </div>
+            <div class="huvud">
+              <i class="fas fa-head-side-virus"></i>
+              <p>Huvudvärk</p>
+            </div>
+            <div class="fasting">
+              <i class="fas fa-bug"></i>
+              <p>Fästingbett</p>
+            </div>
+            <div class="somn">
+              <i class="fas fa-bed"></i>
+              <p>Sömnproblem</p>
+            </div>
+          </div>
+          <div class="top-container ettan">
+            <h4>Hur kan vi hjälpa till?</h4>
+            <p>
+              Våra <strong>läkare, sjuksköterskor </strong>och
+              <strong>psykologer</strong> finns här för dig och din famil.Öppet
+              dygnet runt.
+            </p>
+            <button class="search-care" type="button">Chatta med oss</button>
+          </div>
+
+          <div class="boka-tid-container hollare hide">
+            <span class="close"><i class="fas fa-window-close"></i></span>
+          </div>
+          <div class="vaccination-container ettan hollare">
+            <div id="map"></div>
+            <p class="corona-para">Din plats</p>
+            <h4>Hitta ledig tid närmaste mottagning</h4>
+            <p class="para-text">
+              <span class="mottagning"></span>
+            </p>
+            <button class="boka-vaccination boka-tid-btn">Boka Tid</button>
+          </div>
+          <div class="vaccination-container hollare">
+            <img src="./images/vaccin-img.jpeg" alt="covid-vaccin" />
+            <p class="corona-para">CORONAVIRUS</p>
+            <h4>Boka tid för vaccination mot covid-19</h4>
+            <p class="para-text">
+              Närmaste mottagnig:
+              <span class="mottagning"> name here</span>
+            </p>
+            <button class="boka-vaccination covidVaccin-btn">
+              Boka vaccination
+            </button>
+          </div>
+          <div class="corona-test-prod-container hollare hidden">
+            <img src="./images/testprodct.png" alt="covid-test-product" />
+            <p class="corona-para corona-pris">199kr</p>
+            <h4>Testa dig hemma</h4>
+            <p class="para-text">Få svar direkt</p>
+            <button class="boka-vaccination buy-btn">Köp test</button>
+            <button class="boka-vaccination varukorg-btn hide">
+              Min varukorg
+            </button>
+          </div>
+          <div class="testadig-container hollare villbe">
+            <img src="./images/covid-test.jpeg" alt="covi-test" />
+            <p class="corona-para">CORONAVIRUS</p>
+            <h4>Testa dig covid-19</h4>
+            <p class="paraText">
+              Vi erbjuder gör det själv test för covid-19 för vuxna och barn
+              över 6 år.
+            </p>
+            <button class="boka-vaccination visa-testerna-btn">
+              Visa testerna
+            </button>
+          </div>
+          <div class="testadig-container hollare villbe">
+            <img src="./images/health-img-2.jpeg" alt="covi-test" />
+            <p class="corona-para">HÄLSA</p>
+            <h4>Gör komplett hälsotest</h4>
+            <p class="paraText">
+              Våra kostnadsfria hälsotest är utvecklade för att ge dig en
+              personligt anpassad produktrekommendation.
+            </p>
+            <button class="boka-vaccination halso-test-btn">
+              Börja testet
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span>
+          <i class="fas fa-home"></i>
+          <p>Hem</p>
+        </span>
+        <span>
+          <i class="far fa-calendar-plus"></i>
+          <p>Bokade Tider</p>
+        </span>
+        <span>
+          <i class="fas fa-user"></i>
+          <p>Min Profil</p>
+        </span>
+        <span></span>
+        <span></span>
+      </footer>
+    </div>
+  </body>
+</html>

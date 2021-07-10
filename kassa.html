@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ee0a0de948.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="./kassa.js"></script>
+    <title>Kassa</title>
+    <style>
+      .icons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .icons-container i {
+        color: rgb(10, 116, 93);
+      }
+      .icons-container span {
+        font-size: 0.8rem;
+      }
+      .products-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .fa-plus-square {
+        color: green;
+      }
+      .pay {
+        background: green;
+        margin-top: 2rem;
+        width: 8rem;
+        letter-spacing: 1px;
+        padding: 0.4rem;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px 3px;
+        cursor: pointer;
+      }
+      .pay:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icons-container">
+      <span class="icons-con"
+        ><i class="fas fa-check-circle"></i> Fri Frakt</span
+      >
+      <span class="icons-con"
+        ><i class="fas fa-check-circle"></i> Leverans med Postnord</span
+      >
+      <span class="icons-con oppet"
+        ><i class="fas fa-check-circle"></i> Öppet köp i 30 dagar</span
+      >
+    </div>
+    <div class="products-container">
+      <div class="cont">
+        <p>Vara</p>
+        <p class="vara"></p>
+      </div>
+      <div class="cont">
+        <p>Pris</p>
+        <p class="pris"></p>
+      </div>
+      <div class="cont">
+        <p>Antal</p>
+
+        <p class="antal"></p>
+      </div>
+      <div class="cont">
+        <p>Belopp</p>
+        <p class="belopp"></p>
+      </div>
+    </div>
+    <div class="payment-container">
+      <button class="pay">Betala</button>
+    </div>
+  </body>
+</html>

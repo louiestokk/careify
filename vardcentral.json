@@ -1,0 +1,49 @@
+{
+  "klinik": [
+    {
+      "name": "Min Doktor Vård & Vaccin",
+      "number": "155460880",
+      "adress": "Gymnasiegatan, 442 34 Kungälv",
+      "oppet": "mån-fred: 08:00-17:00"
+    },
+
+    {
+      "name": "Centrumpraktiken Kungälv",
+      "number": "303209300",
+      "adress": "Triogatan 5, 442 34 Kungälv",
+      "oppet": "mån-fred: 08:00-17:00"
+    },
+
+    {
+      "name": "Närhälsan Kongahälla vårdcentral och BVC",
+      "number": "0104733800",
+      "adress": "Älvebacken 1, 442 35 Kungälv",
+      "oppet": "mån-fred: 08:00-17:00"
+    },
+
+    {
+      "name": "Närhälsan Kungälv Jourcentral",
+      "number": "30398024",
+      "adress": "Kungälvs sjukhus, 442 83 Kungälv",
+      "oppet": "mån-fred: 08:00-17:00"
+    },
+    {
+      "name": "Närhälsan Solgärde vårdcentral och BVC",
+      "number": "0104733830",
+      "adress": "Rollsbovägen 58, 442 40 Kungälv",
+      "oppet": "mån-fred: 08:00-17:00"
+    },
+    {
+      "name": "Älvpraktiken vårdcentral och BVC",
+      "number": "303404700",
+      "adress": "NORDMANNATORGET 1, 442 37 Kungälv",
+      "oppet": "mån-fred: 08:00-17:00"
+    },
+    {
+      "name": "Vårdcentralen Kusten Ytterby",
+      "number": "303379700",
+      "adress": "Stationsgatan 1, 442 50 Ytterby",
+      "oppet": "mån-fred: 08:00-17:00"
+    }
+  ]
+}

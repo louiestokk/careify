@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  letter-spacing: 1px;
+}
+img {
+  width: 340px;
+  object-fit: cover;
+  height: 113px;
+  border-radius: 10px 10px;
+}
+button {
+  cursor: pointer;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr 3rem;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.header-container {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.top-container p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  max-width: 15rem;
+}
+.top-container h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.field {
+  margin: 0 auto;
+}
+.input {
+  margin-top: 1rem;
+  width: 16rem;
+  height: 2rem;
+  border-radius: 5px 5px;
+  border: 1px solid black;
+  padding: 0.6rem 0;
+  text-align: center;
+}
+.main-container {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-care {
+  margin: 0 auto;
+  width: 340px;
+  height: 2.3rem;
+  letter-spacing: 2px;
+
+  font-size: 0.9rem;
+  color: white;
+  background: rgb(10, 116, 93);
+  border: none;
+  border-radius: 5px 5px;
+}
+.search-care:hover {
+  opacity: 0.7;
+}
+p {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.hollare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  width: 340px;
+  height: 100%;
+  border-radius: 10px 10px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.corona-para {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.6rem;
+  justify-content: flex-start;
+}
+.boka-vaccination {
+  border: none;
+  border-top: 0.1px solid rgb(211, 208, 208);
+  background: transparent;
+  width: 80%;
+  margin-top: 0.3rem;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: rgb(11, 131, 105);
+}
+.boka-vaccination:hover {
+  opacity: 0.7;
+}
+
+.hollare h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.para-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+}
+.paraText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+}
+
+#map {
+  width: 340px;
+
+  height: 113px;
+  border-radius: 10px 10px;
+}
+.ettan {
+  margin: 1rem 0;
+  width: 340px;
+  height: 100%;
+  border-radius: 10px 10px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+footer {
+  margin: 0 auto;
+  width: 340px;
+  border: 0.3px solid rgb(211, 208, 208);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 0.5rem;
+}
+footer span {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+footer i:hover {
+  color: rgb(10, 116, 93);
+}
+.hidden {
+  display: none;
+}
+.corona-pris {
+  color: rgb(10, 116, 93);
+  font-size: 0.8rem;
+}
+.fa-shopping-cart,
+.count {
+  font-size: 1rem;
+  color: rgb(10, 116, 93);
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+.klinikadress {
+  font-size: 0.7rem;
+}
+.klinikname {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  color: rgb(10, 116, 93);
+}
+.fa-phone-square {
+  font-size: 1rem;
+  color: rgb(10, 116, 93);
+}
+.fa-phone-square:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+.fa-window-close {
+  color: rgb(151, 151, 151);
+}
+.fa-window-close:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+.close {
+  margin-left: 19rem;
+}
+.fa-calendar-check {
+  font-size: 1rem;
+  color: rgb(65, 144, 235);
+  margin-left: 5px;
+}
+.fa-calendar-check:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+.apoointment-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.apoointment-container i {
+  font-size: 1.5rem;
+  color: rgb(60, 127, 228);
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.apoointment-container p {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.apoointment-container i:hover {
+  transform: scale(1.1);
+}
+.apoointment-container span {
+  font-size: 0.8rem;
+  color: rgb(60, 127, 228);
+  margin-left: 18rem;
+}
